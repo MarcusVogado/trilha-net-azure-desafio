@@ -11,7 +11,7 @@ namespace TrilhaNetAzureDesafio.Context
     {
         public RHContext(DbContextOptions<RHContext> options) : base(options)
         {
-
+            Database.Migrate();
         }
 
         public DbSet<Funcionario> Funcionarios { get; set; }
